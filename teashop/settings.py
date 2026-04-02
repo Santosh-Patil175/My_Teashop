@@ -75,8 +75,12 @@ WSGI_APPLICATION = 'teashop.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'myproject_db',
+        'USER': 'root',
+        'PASSWORD': 'xxxxxx@123',
+        'HOST': 'localhost',   
+        'PORT': '3306',
     }
 }
 
